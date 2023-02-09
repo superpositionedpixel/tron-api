@@ -19,7 +19,7 @@
 
     "require": {
         "php": ">=8.0",
-        "comely-io/data-types": "^1.0",
+        "fenguoz/data-types": "^1.0",
         "guzzlehttp/guzzle": "^7.2",
         "fenguoz/web3.php": "^1.0",
         "kornrunner/secp256k1": "^0.2",
@@ -29,7 +29,7 @@
     },
 
     "require-dev": {
-        "phpunit/phpunit": "^6.0"
+        "phpunit/phpunit": "~9.0"
     },
     "autoload": {
         "psr-4": {
