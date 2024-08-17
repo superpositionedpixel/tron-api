@@ -1386,4 +1386,18 @@ class Tron implements TronInterface
             'value' =>  $token_id
         ]);
     }
+
+    /**
+     *  TRX All transactions
+     *
+     * @param string $address
+     * @param int $limit
+     * @return array
+     *
+     * @throws TronException
+     */
+    public function getTransactions(string $address, int $limit = 100): array
+    {
+        return $this->manager->request("v1/accounts/{$address}/transactions?limit={$limit}", [], 'get');
+    }
 }
